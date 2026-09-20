@@ -1,0 +1,9 @@
+{
+  "name":"Dada's Sweets & Restaurant",
+  "short_name":"Dada's",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#17120f",
+  "theme_color":"#f7f2ea",
+  "description":"Dada's Sweets & Restaurant, Chandausi"
+}
