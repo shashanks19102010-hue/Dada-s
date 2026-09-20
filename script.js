@@ -1,74 +1,68 @@
-const menuButton = document.getElementById("menuButton");
-const themeToggle = document.getElementById("themeToggle");
-const drawer = document.getElementById("mobileDrawer");
-const closeDrawer = document.getElementById("closeDrawer");
-const year = document.getElementById("year");
+const header=document.getElementById("header");
+const menuButton=document.getElementById("menuButton");
+const drawer=document.getElementById("drawer");
+const closeDrawer=document.getElementById("closeDrawer");
+const themeToggle=document.getElementById("themeToggle");
+const year=document.getElementById("year");
+const search=document.getElementById("menuSearch");
+const filters=[...document.querySelectorAll("#filters button")];
+const cards=[...document.querySelectorAll(".menu-card")];
 
-function setDrawer(open) {
-  drawer.classList.toggle("open", open);
-  drawer.setAttribute("aria-hidden", String(!open));
-  menuButton.setAttribute("aria-expanded", String(open));
-  document.body.classList.toggle("no-scroll", open);
+function setDrawer(open){
+  drawer.classList.toggle("open",open);
+  drawer.setAttribute("aria-hidden",String(!open));
+  menuButton.setAttribute("aria-expanded",String(open));
+  document.body.classList.toggle("no-scroll",open);
 }
+menuButton?.addEventListener("click",()=>setDrawer(true));
+closeDrawer?.addEventListener("click",()=>setDrawer(false));
+drawer?.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>setDrawer(false)));
 
-menuButton?.addEventListener("click", () => setDrawer(true));
-closeDrawer?.addEventListener("click", () => setDrawer(false));
-drawer?.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setDrawer(false)));
+function applyTheme(theme){
+  document.body.classList.toggle("noir",theme==="noir");
+  localStorage.setItem("dada-theme",theme);
+  themeToggle?.setAttribute("aria-label",theme==="noir"?"Switch to light theme":"Switch to dark theme");
+}
+applyTheme(localStorage.getItem("dada-theme")==="noir"?"noir":"light");
+themeToggle?.addEventListener("click",()=>{
+  applyTheme(document.body.classList.contains("noir")?"light":"noir");
+});
 
-const header = document.querySelector(".site-header");
-const onScroll = () => header?.classList.toggle("scrolled", window.scrollY > 12);
+const onScroll=()=>header?.classList.toggle("scrolled",window.scrollY>12);
 onScroll();
-window.addEventListener("scroll", onScroll, { passive: true });
+window.addEventListener("scroll",onScroll,{passive:true});
 
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      revealObserver.unobserve(entry.target);
-    }
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target);}
   });
-}, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+},{threshold:.12,rootMargin:"0px 0px -35px 0px"});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
 
-document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
-
-const filters = [...document.querySelectorAll(".filter")];
-const cards = [...document.querySelectorAll(".food-card")];
-
-filters.forEach((button) => {
-  button.addEventListener("click", () => {
-    filters.forEach((item) => item.classList.remove("active"));
+function applyFilter(){
+  const active=document.querySelector("#filters button.active")?.dataset.filter||"all";
+  const q=(search?.value||"").trim().toLowerCase();
+  cards.forEach(card=>{
+    const category=card.dataset.category||"";
+    const name=(card.dataset.name||"").toLowerCase();
+    const visible=(active==="all"||category===active)&&(!q||name.includes(q));
+    card.classList.toggle("hidden",!visible);
+  });
+}
+filters.forEach(button=>{
+  button.addEventListener("click",()=>{
+    filters.forEach(b=>b.classList.remove("active"));
     button.classList.add("active");
-    const filter = button.dataset.filter;
-    cards.forEach((card) => {
-      const show = filter === "all" || card.dataset.category === filter;
-      card.classList.toggle("hidden", !show);
-    });
+    applyFilter();
   });
 });
+search?.addEventListener("input",applyFilter);
 
-year.textContent = new Date().getFullYear();
-
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-  link.addEventListener("click", (event) => {
-    const id = link.getAttribute("href");
-    if (!id || id === "#") return;
-    const target = document.querySelector(id);
-    if (target) {
-      event.preventDefault();
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+year.textContent=new Date().getFullYear();
+document.querySelectorAll('a[href^="#"]').forEach(link=>{
+  link.addEventListener("click",event=>{
+    const id=link.getAttribute("href");
+    const target=id?document.querySelector(id):null;
+    if(target){event.preventDefault();target.scrollIntoView({behavior:"smooth",block:"start"});}
   });
-});
-
-const savedTheme = localStorage.getItem("dada-theme");
-if (savedTheme === "noir") document.body.dataset.theme = "noir";
-themeToggle?.addEventListener("click", () => {
-  const noir = document.body.dataset.theme === "noir";
-  if (noir) {
-    delete document.body.dataset.theme;
-    localStorage.setItem("dada-theme", "light");
-  } else {
-    document.body.dataset.theme = "noir";
-    localStorage.setItem("dada-theme", "noir");
-  }
 });
