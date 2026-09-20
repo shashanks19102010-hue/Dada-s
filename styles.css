@@ -222,3 +222,44 @@ linear-gradient(145deg,#efe3d5,#d6c0a4)}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
 }
+
+/* Premium v2 — theme, ordering, mobile drawer and editorial polish */
+:root{--gold:#c6925a;--accent:#8e301c}
+body[data-theme="noir"]{--paper:#17120f;--paper-2:#211914;--ink:#f5eadf;--muted:#b6a79a;--line:rgba(255,239,224,.14);--white:#fffaf3;--dark:#0f0c0a}
+body[data-theme="noir"] .site-header{background:rgba(23,18,15,.88)}
+body[data-theme="noir"] .brand-band,body[data-theme="noir"] .restaurant,body[data-theme="noir"] .sources{background:#211914}
+body[data-theme="noir"] .food-card,body[data-theme="noir"] .floating-card,body[data-theme="noir"] .visual-card-note{background:#211914;color:var(--ink)}
+body[data-theme="noir"] .hero-lead,body[data-theme="noir"] .story-title p,body[data-theme="noir"] .story-body p,body[data-theme="noir"] .section-head p,body[data-theme="noir"] .food-meta p,body[data-theme="noir"] .restaurant-copy>p,body[data-theme="noir"] .sources p{color:#b6a79a}
+body[data-theme="noir"] .mobile-drawer{background:#17120f;color:#f5eadf}
+.header-tools{display:flex;align-items:center;gap:10px}
+.theme-toggle{width:38px;height:38px;border:1px solid var(--line);border-radius:50%;background:transparent;color:inherit;cursor:pointer;font-size:17px}
+.theme-toggle:hover{background:var(--ink);color:var(--paper)}
+.mobile-drawer{position:fixed;inset:0 0 0 auto;width:min(420px,92vw);z-index:100;background:#f7f2ea;color:#171411;padding:24px;transform:translateX(105%);transition:transform .45s cubic-bezier(.2,.75,.2,1);box-shadow:-30px 0 80px rgba(0,0,0,.18)}
+.mobile-drawer.open{transform:none}
+.drawer-top{display:flex;justify-content:space-between;align-items:center;padding-bottom:26px;border-bottom:1px solid var(--line);font-family:"Playfair Display",serif;font-size:28px}
+.drawer-top button{border:1px solid var(--line);background:transparent;padding:9px 12px;text-transform:uppercase;font-size:9px;letter-spacing:.1em}
+.mobile-drawer nav{display:flex;flex-direction:column;padding:25px 0}
+.mobile-drawer nav a{font-family:"Playfair Display",serif;font-size:38px;padding:13px 0;border-bottom:1px solid var(--line)}
+.drawer-call{display:block;background:var(--ink);color:var(--white);text-align:center;padding:15px;border-radius:999px;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.ordering{background:#e9ddcf}
+.ordering-grid{max-width:1500px;margin:auto;display:grid;grid-template-columns:1fr .72fr;gap:10vw;align-items:center}
+.ordering-copy h2{font-family:"Playfair Display",serif;font-size:clamp(50px,6vw,88px);line-height:.98;letter-spacing:-.045em;margin:0 0 25px}
+.ordering-copy>p{max-width:620px;color:#655b53;line-height:1.8;font-size:15px}
+.order-actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+.order-status{display:grid;grid-template-columns:auto auto 1fr;align-items:center;gap:8px;max-width:650px;padding-top:18px;border-top:1px solid var(--line)}
+.order-status span{width:7px;height:7px;border-radius:50%;background:#b68b63}
+.order-status b{font-size:10px;text-transform:uppercase;letter-spacing:.12em}
+.order-status small{grid-column:1/-1;color:#81746a;font-size:10px;line-height:1.5}
+.order-card{background:#201713;color:#f7eee5;padding:32px;box-shadow:var(--shadow)}
+.order-card-label{font-size:9px;letter-spacing:.15em;color:#b9936d}
+.order-stat{display:flex;align-items:end;justify-content:space-between;gap:20px;padding:25px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.order-stat:last-child{border-bottom:0}
+.order-stat b{font-family:"Playfair Display",serif;font-size:52px;font-weight:500;color:#d0a06d}
+.order-stat span{max-width:180px;color:#b8aa9c;font-size:10px;line-height:1.5;text-align:right;text-transform:uppercase;letter-spacing:.06em}
+@media(max-width:680px){
+ .header-tools{gap:4px}.theme-toggle{width:34px;height:34px}
+ .mobile-drawer nav a{font-size:32px}
+ .ordering-grid{grid-template-columns:1fr}
+ .order-actions{flex-direction:column}.order-actions a{width:100%}
+ .order-stat b{font-size:42px}
+}
