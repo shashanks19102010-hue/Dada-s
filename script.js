@@ -1,4 +1,5 @@
 const menuButton = document.getElementById("menuButton");
+const themeToggle = document.getElementById("themeToggle");
 const drawer = document.getElementById("mobileDrawer");
 const closeDrawer = document.getElementById("closeDrawer");
 const year = document.getElementById("year");
@@ -57,4 +58,17 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
       target.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   });
+});
+
+const savedTheme = localStorage.getItem("dada-theme");
+if (savedTheme === "noir") document.body.dataset.theme = "noir";
+themeToggle?.addEventListener("click", () => {
+  const noir = document.body.dataset.theme === "noir";
+  if (noir) {
+    delete document.body.dataset.theme;
+    localStorage.setItem("dada-theme", "light");
+  } else {
+    document.body.dataset.theme = "noir";
+    localStorage.setItem("dada-theme", "noir");
+  }
 });
