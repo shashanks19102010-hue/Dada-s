@@ -1,381 +1,185 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f2ea">
-  <meta name="description" content="Dada's Sweets & Restaurant, Chandausi — pure vegetarian sweets, namkeen, restaurant food and Bhaji Boxes. Station Road, near S.M. College.">
-  <meta name="keywords" content="Dada Sweets Chandausi, Dada's Sweets Restaurant, sweets Chandausi, Bhaji Box Chandausi, pure vegetarian restaurant Chandausi">
-  <meta property="og:title" content="Dada's Sweets & Restaurant — Chandausi">
-  <meta property="og:description" content="Sweets, restaurant favourites and Bhaji Boxes from Dada's Sweets, Station Road, Chandausi.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://cdn.dotpe.in/longtail/custom_website/8152314/20OLPnNG.png">
-  <title>Dada's Sweets & Restaurant · Chandausi</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Restaurant",
-    "name":"Dada's Sweets And Restaurant",
-    "url":"https://www.dadasweets.com/",
-    "telephone":"+91-90458-88809",
-    "email":"maildada061973@gmail.com",
-    "address":{
-      "@type":"PostalAddress",
-      "streetAddress":"Station Road, Near S.M. College",
-      "addressLocality":"Chandausi",
-      "addressRegion":"Uttar Pradesh",
-      "postalCode":"244412",
-      "addressCountry":"IN"
-    },
-    "servesCuisine":["Indian sweets","North Indian","South Indian","Vegetarian"],
-    "acceptsReservations":true
-  }
-  </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f0e7">
+<meta name="description" content="Dada's Sweets & Restaurant, Chandausi — sweets, namkeen, Bhaji Boxes and a pure-vegetarian restaurant on Station Road near S.M. College.">
+<meta property="og:title" content="Dada's Sweets & Restaurant · Chandausi">
+<meta property="og:description" content="Mithai, namkeen, gift boxes and restaurant favourites from Dada's Sweets in Chandausi.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://cdn.dotpe.in/longtail/custom_website/8152314/20OLPnNG.png">
+<title>Dada's Sweets & Restaurant · Chandausi</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Dada's Sweets And Restaurant","telephone":"+91-9045888809","email":"maildada061973@gmail.com","url":"https://www.dadasweets.com/","address":{"@type":"PostalAddress","streetAddress":"SM College Shopping Complex, Station Road","addressLocality":"Chandausi","addressRegion":"Uttar Pradesh","postalCode":"244412","addressCountry":"IN"},"servesCuisine":["Indian sweets","North Indian","South Indian","Vegetarian"]}
+</script>
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
 
-  <div class="topline">
-    <span>Pure vegetarian</span>
-    <span class="dot">•</span>
-    <span>Station Road · Chandausi</span>
-    <span class="dot">•</span>
-    <span>Fresh sweets · restaurant · Bhaji Boxes</span>
+<div class="utility">
+  <span>Pure vegetarian</span><span>•</span><span>Station Road · Chandausi</span><span>•</span><span>Freshly prepared</span>
+</div>
+
+<header class="header" id="header">
+  <a class="brand" href="#home" aria-label="Dada's Sweets home">
+    <span class="brand-logo"><img src="https://cdn.dotpe.in/longtail/custom_website/8152314/20OLPnNG.png" alt="Dada's original logo"></span>
+    <span><strong>Dada's</strong><small>Sweets & Restaurant</small></span>
+  </a>
+  <nav class="nav" aria-label="Primary">
+    <a href="#story">Story</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a>
+  </nav>
+  <div class="actions">
+    <button class="theme" id="themeToggle" aria-label="Switch theme">◐</button>
+    <a class="call" href="tel:+919045888809">Call</a>
+    <a class="order" href="#order">Order <span>↗</span></a>
   </div>
+  <button class="mobile-menu" id="menuButton" aria-label="Open navigation" aria-expanded="false">Menu</button>
+</header>
 
-  <header class="site-header" id="top">
-    <a class="brand" href="#home" aria-label="Dada's Sweets home">
-      <span class="brand-mark">D</span>
-      <span class="brand-copy">
-        <strong>Dada's</strong>
-        <small>Sweets & Restaurant</small>
-      </span>
-    </a>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-head"><span>Dada's</span><button id="closeDrawer">Close</button></div>
+  <nav><a href="#story">Story</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a></nav>
+  <div class="drawer-foot"><a href="tel:+919045888809">Call 90458 88809</a><a href="#order">Ordering</a></div>
+</aside>
 
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="#story">Story</a>
-      <a href="#selection">Selection</a>
-      <a href="#restaurant">Restaurant</a>
-      <a href="#visit">Visit</a>
-    </nav>
+<main>
+<section class="hero section" id="home">
+  <div class="hero-copy reveal">
+    <p class="eyebrow"><i></i> DADA'S GREAT TASTE</p>
+    <h1>Mithai made<br><em>memorable.</em></h1>
+    <p class="lead">A sweets house and restaurant in Chandausi, founded by Dileep Kumar and grown from a sweets-only shop into a broader vegetarian food business.</p>
+    <div class="hero-actions"><a class="button dark" href="#menu">Explore the menu <span>↓</span></a><a class="underlined" href="#order">Order / enquire ↗</a></div>
+    <div class="proof-row"><span>Premium Quality</span><span>Freshly Prepared</span><span>Pure Vegetarian</span><span>Fast Delivery</span></div>
+  </div>
+  <div class="hero-media reveal delay">
+    <div class="hero-main-photo"><img src="https://cdn.dotpe.in/longtail/custom_website/8152314/20OLPnNG.png" alt="Dada's sweets assortment with original brand logo"></div>
+    <div class="hero-side-photo"><img src="https://cdn.dotpe.in/longtail/item_category/8152314/zzflmeUu.png" alt="Gulab Jamun from Dada's Sweets"></div>
+    <div class="hero-stamp"><span>DS</span><b>GREAT<br>TASTE</b></div>
+  </div>
+</section>
 
-    <div class="header-actions">
-      <a class="icon-link" href="https://www.google.com/maps/search/?api=1&query=Dada%27s%20Sweets%20And%20Restaurant%20SM%20College%20Station%20Road%20Chandausi" target="_blank" rel="noreferrer">Directions ↗</a>
-      <a class="call-pill" href="tel:+919045888809">Call</a>
-    </div>
+<section class="brand-ribbon">
+  <div>FSSAI COMPLIANT</div><div>VALUE FOR MONEY</div><div>ISO CERTIFIED</div><div>SWEETS + RESTAURANT</div><div>CHANDAUSI</div>
+</section>
 
-    <div class="header-tools"><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">◐</button><button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">Menu</button></div>
-  </header>
+<section class="story section" id="story">
+  <div class="section-label reveal"><span>01</span><span>THE STORY</span></div>
+  <div class="split">
+    <div class="reveal"><h2>From a sweets shop to a <em>full table.</em></h2></div>
+    <div class="copy reveal delay"><p>Dada's official website says the business was founded by <strong>Dileep Kumar</strong>. It began as a sweets shop and later expanded into the restaurant line.</p><p>The public footprint now spans sweets, namkeen, festive/gift boxes and vegetarian restaurant offerings in Chandausi.</p></div>
+  </div>
+</section>
 
-  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
-    <div class="drawer-top">
-      <span>Dada's</span>
-      <button id="closeDrawer" aria-label="Close menu">Close</button>
-    </div>
-    <nav>
-      <a href="#story">Story</a>
-      <a href="#selection">Selection</a>
-      <a href="#restaurant">Restaurant</a>
-      <a href="#visit">Visit</a>
-    </nav>
-    <a class="drawer-call" href="tel:+919045888809">Call · 90458 88809</a>
-  </aside>
+<section class="menu section" id="menu">
+  <div class="section-label reveal"><span>02</span><span>THE MENU</span></div>
+  <div class="menu-top reveal">
+    <div><h2>The names people <em>come back for.</em></h2><p>Only items that could be tied to Dada's public catalogue or clearly surfaced in public business listings are shown here. Prices are intentionally omitted where current public pricing is not verifiable.</p></div>
+    <label class="search"><span>⌕</span><input id="menuSearch" type="search" placeholder="Search menu"></label>
+  </div>
+  <div class="filter-bar" id="filters">
+    <button class="active" data-filter="all">All</button><button data-filter="sweets">Mithai</button><button data-filter="boxes">Boxes</button><button data-filter="namkeen">Namkeen</button><button data-filter="restaurant">Restaurant</button>
+  </div>
+  <div class="menu-grid" id="menuGrid">
+    <article class="menu-card photo-card reveal" data-category="sweets" data-name="Mango Peda">
+      <div class="photo"><img src="https://cdn.dotpe.in/longtail/custom_website/8152314/20OLPnNG.png" alt="Mango Peda assortment"></div><div class="meta"><span>MITHAI</span><h3>Mango Peda</h3><a href="https://www.dadasweets.com/product/30121222/Mango-Peda" target="_blank" rel="noreferrer">Catalogue page ↗</a></div>
+    </article>
+    <article class="menu-card photo-card reveal delay" data-category="sweets" data-name="Elaichi Mawa Ghevar">
+      <div class="photo"><img src="https://cdn.dotpe.in/longtail/custom_website/8152314/20OLPnNG.png" alt="Elaichi Mawa Ghevar assortment"></div><div class="meta"><span>MITHAI</span><h3>Elaichi Mawa Ghevar</h3><a href="https://www.dadasweets.com/product/30114476/Elaichi-Mawa-Ghevar" target="_blank" rel="noreferrer">Catalogue page ↗</a></div>
+    </article>
+    <article class="menu-card photo-card reveal" data-category="sweets" data-name="Jalebi">
+      <div class="photo"><img src="https://cdn.dotpe.in/longtail/custom_website/8152314/20OLPnNG.png" alt="Indian sweets assortment"></div><div class="meta"><span>MITHAI</span><h3>Jalebi</h3><a href="https://www.dadasweets.com/product/30121215/Jalebi" target="_blank" rel="noreferrer">Catalogue page ↗</a></div>
+    </article>
+    <article class="menu-card photo-card reveal delay" data-category="sweets" data-name="Gulab Jamun">
+      <div class="photo"><img src="https://cdn.dotpe.in/longtail/item_category/8152314/zzflmeUu.png" alt="Gulab Jamun"></div><div class="meta"><span>MITHAI</span><h3>Gulab Jamun</h3><a href="https://www.dadasweets.com/" target="_blank" rel="noreferrer">Public listing ↗</a></div>
+    </article>
+    <article class="menu-card photo-card reveal" data-category="namkeen" data-name="Kaju Namkeen">
+      <div class="photo"><img src="https://cdn.dotpe.in/longtail/item_category/8152314/FYGaeC1F.png" alt="Dada's namkeen and peda assortment"></div><div class="meta"><span>NAMKEEN</span><h3>Kaju Namkeen</h3><small>100 gm in the public Box 03 listing</small></div>
+    </article>
+    <article class="menu-card photo-card reveal delay" data-category="sweets" data-name="Khasta">
+      <div class="photo"><img src="https://cdn.dotpe.in/longtail/item_category/8152314/FYGaeC1F.png" alt="Dada's sweet and savoury assortment"></div><div class="meta"><span>SAVOURY</span><h3>Khasta</h3><small>100 gm in the public Box 03 listing</small></div>
+    </article>
+    <article class="menu-card photo-card reveal" data-category="sweets" data-name="Dry Fruit Laddu">
+      <div class="photo"><img src="https://cdn.dotpe.in/longtail/item_category/8152314/FYGaeC1F.png" alt="Dada's peda assortment"></div><div class="meta"><span>MITHAI</span><h3>Dry Fruit Laddu</h3><small>125 gm in the public Box 03 listing</small></div>
+    </article>
+    <article class="menu-card photo-card reveal delay" data-category="sweets" data-name="Doda Barfi">
+      <div class="photo"><img src="https://cdn.dotpe.in/longtail/item_category/8152314/FYGaeC1F.png" alt="Indian sweet assortment"></div><div class="meta"><span>MITHAI</span><h3>Doda Barfi</h3><small>125 gm in the public Box 03 listing</small></div>
+    </article>
+    <article class="menu-card photo-card reveal" data-category="sweets" data-name="Balushahi">
+      <div class="photo"><img src="https://cdn.dotpe.in/longtail/item_category/8152314/FYGaeC1F.png" alt="Dada's sweet assortment"></div><div class="meta"><span>MITHAI</span><h3>Balushahi</h3><small>125 gm in the public Box 03 listing</small></div>
+    </article>
+    <article class="menu-card photo-card reveal delay" data-category="sweets" data-name="Magad Laddu">
+      <div class="photo"><img src="https://cdn.dotpe.in/longtail/custom_website/8152314/20OLPnNG.png" alt="Dada's Indian sweets assortment"></div><div class="meta"><span>MITHAI</span><h3>Magad Laddu</h3><small>125 gm in the public Box 03 listing</small></div>
+    </article>
+    <article class="menu-card box-card reveal" data-category="boxes" data-name="03 Box">
+      <div class="box-photo"><img src="https://cdn.dotpe.in/longtail/custom_website/8152314/20OLPnNG.png" alt="Dada's premium sweets assortment"></div><div class="meta"><span>GIFT BOX</span><h3>03</h3><small>Kaju Namkeen · Khasta · Dry Fruit Laddu · Doda Barfi · Balushahi · Magad Laddu</small></div>
+    </article>
+    <article class="menu-card photo-card reveal delay" data-category="boxes" data-name="19 Bhaji Box">
+      <div class="photo"><img src="https://cdn.dotpe.in/longtail/store-items/8152314/UYrQiRP5.webp" alt="Dada's 19 Bhaji Box"></div><div class="meta"><span>BHAJI BOX</span><h3>19 Bhaji Box</h3><small>Official online product listing</small></div>
+    </article>
+    <article class="menu-card photo-card reveal" data-category="boxes" data-name="14 Bhaji Box">
+      <div class="photo"><img src="https://cdn.dotpe.in/longtail/store-items/8152314/UYrQiRP5.webp" alt="Dada's Bhaji Box"></div><div class="meta"><span>BHAJI BOX</span><h3>14 Bhaji Box</h3><a href="https://www.dadasweets.com/product/30714445/14-Bhaji-Box" target="_blank" rel="noreferrer">Catalogue page ↗</a></div>
+    </article>
+    <article class="menu-card photo-card reveal delay" data-category="boxes" data-name="16 Bhaji Box">
+      <div class="photo"><img src="https://cdn.dotpe.in/longtail/store-items/8152314/UYrQiRP5.webp" alt="Dada's Bhaji Box"></div><div class="meta"><span>BHAJI BOX</span><h3>16 Bhaji Box</h3><a href="https://www.dadasweets.com/product/30714453/16-Bhaji-Box" target="_blank" rel="noreferrer">Catalogue page ↗</a></div>
+    </article>
+    <article class="menu-card photo-card reveal" data-category="boxes" data-name="22 Premium Bhaji Box">
+      <div class="photo"><img src="https://cdn.dotpe.in/longtail/store-items/8152314/UYrQiRP5.webp" alt="Dada's premium Bhaji Box"></div><div class="meta"><span>PREMIUM BOX</span><h3>22 Premium Bhaji Box</h3><a href="https://www.dadasweets.com/product/32196983/22-Premium-Bhaji-Box" target="_blank" rel="noreferrer">Catalogue page ↗</a></div>
+    </article>
+    <article class="menu-card photo-card reveal delay" data-category="boxes" data-name="06 Premium 4Line Box">
+      <div class="photo"><img src="https://cdn.dotpe.in/longtail/store-items/8152314/UYrQiRP5.webp" alt="Dada's premium gift box"></div><div class="meta"><span>GIFT BOX</span><h3>06 Premium 4Line Box</h3><a href="https://www.dadasweets.com/product/29928822/06-Premium-4Line-Box" target="_blank" rel="noreferrer">Catalogue page ↗</a></div>
+    </article>
+    <article class="menu-card text-card reveal" data-category="restaurant" data-name="Samosa">
+      <div class="text-art"><span>SAMOSA</span></div><div class="meta"><span>RESTAURANT / SNACK</span><h3>Samosa</h3><small>Explicitly mentioned in a public customer review.</small></div>
+    </article>
+    <article class="menu-card text-card reveal delay" data-category="restaurant" data-name="Kachori">
+      <div class="text-art"><span>KACHORI</span></div><div class="meta"><span>RESTAURANT / SNACK</span><h3>Kachori</h3><small>Explicitly mentioned in a public customer review.</small></div>
+    </article>
+    <article class="menu-card text-card reveal" data-category="restaurant" data-name="Thali">
+      <div class="text-art"><span>THALI</span></div><div class="meta"><span>RESTAURANT</span><h3>Thali</h3><small>Explicitly mentioned in public customer reviews.</small></div>
+    </article>
+    <article class="menu-card text-card reveal delay" data-category="restaurant" data-name="South Indian Breakfast">
+      <div class="text-art"><span>SOUTH<br>INDIAN</span></div><div class="meta"><span>BREAKFAST</span><h3>South Indian breakfast</h3><small>Public listing describes a South Indian cuisine and breakfast menu.</small></div>
+    </article>
+  </div>
+</section>
 
-  <main>
-    <section class="hero section-pad" id="home">
-      <div class="hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span></span> Chandausi · established sweets & restaurant </p>
-          <h1>Sweet memories.<br><em>Served fresh.</em></h1>
-          <p class="hero-lead">
-            Dada's began as a sweets shop founded by Dileep Kumar and later expanded into the restaurant line — bringing mithai, savouries and full meals together under one roof.
-          </p>
-          <div class="hero-cta">
-            <a class="primary-button" href="#selection">Explore the selection <span>↓</span></a>
-            <a class="text-button" href="#ordering">How to order ↗</a>
-          </div>
-          <div class="hero-notes">
-            <span>Premium quality</span>
-            <span>Freshly prepared</span>
-            <span>Fast delivery</span>
-          </div>
-          
-        </div>
+<section class="gallery section" id="gallery">
+  <div class="section-label reveal"><span>03</span><span>THE GALLERY</span></div>
+  <div class="gallery-grid">
+    <figure class="g-main reveal"><img src="https://cdn.dotpe.in/longtail/custom_website/8152314/20OLPnNG.png" alt="Dada's sweets assortment"></figure>
+    <figure class="g-tall reveal delay"><img src="https://cdn.dotpe.in/longtail/item_category/8152314/zzflmeUu.png" alt="Gulab Jamun"></figure>
+    <figure class="g-small reveal"><img src="https://cdn.dotpe.in/longtail/item_category/8152314/FYGaeC1F.png" alt="Assorted peda and namkeen"></figure>
+    <figure class="g-small reveal delay"><img src="https://cdn.dotpe.in/longtail/store-items/8152314/UYrQiRP5.webp" alt="19 Bhaji Box"></figure>
+  </div>
+  <p class="photo-note">Images shown above are publicly served Dada's assets. For a commercial client site, use them only with the business owner's permission.</p>
+</section>
 
-        <div class="hero-art reveal delay-1">
-          <div class="image-frame hero-image">
-            <img src="https://cdn.dotpe.in/longtail/custom_website/8152314/20OLPnNG.png" alt="Dada's sweets assortment with the Dada's Great Taste logo" loading="eager">
-          </div>
-          <div class="floating-card floating-card-a">
-            <span class="mini-label">Signature</span>
-            <strong>Mango Peda</strong>
-            <small>From Dada's online selection</small>
-          </div>
-          <div class="floating-card floating-card-b">
-            <span class="seal">DS</span>
-            <div><strong>Great Taste</strong><small>Pure vegetarian</small></div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-bottom">
-        <span>01 / 04</span>
-        <span>Scroll to discover</span>
-        <span class="line"></span>
-      </div>
-    </section>
+<section class="order section" id="order">
+  <div class="order-panel reveal">
+    <div><p class="eyebrow">ORDER / ENQUIRE</p><h2>Ready when <em>you are.</em></h2><p>For current availability, quantities and delivery coverage, contact Dada's directly. Public marketplace links were not reliably verified, so none are invented here.</p></div>
+    <div class="order-links"><a class="button light" href="tel:+919045888809">Call 90458 88809 ↗</a><a class="button outline" href="mailto:maildada061973@gmail.com">maildada061973@gmail.com ↗</a><a class="button outline" target="_blank" rel="noreferrer" href="https://www.google.com/maps/search/?api=1&query=Dada%27s%20Sweets%20And%20Restaurant%20SM%20College%20Station%20Road%20Chandausi">Get directions ↗</a></div>
+  </div>
+</section>
 
-    <section class="brand-band">
-      <div class="marquee-static">
-        <span>Freshly prepared</span><i>✦</i>
-        <span>Pure vegetarian</span><i>✦</i>
-        <span>FSSAI compliant</span><i>✦</i>
-        <span>Value for money</span><i>✦</i>
-        <span>ISO certified</span>
-      </div>
-    </section>
+<section class="visit section" id="visit">
+  <div class="section-label reveal"><span>04</span><span>VISIT</span></div>
+  <div class="visit-grid">
+    <div class="reveal"><h2>Station Road.<br><em>Chandausi.</em></h2><div class="details"><div><span>ADDRESS</span><b>SM College Shopping Complex, Station Road, Shakti Nagar, Chandausi, U.P. 244412</b></div><div><span>PHONE</span><b>90458 88809</b></div><div><span>EMAIL</span><b>maildada061973@gmail.com</b></div><div><span>PUBLIC LISTING HOURS</span><b>08:30 AM – 10:30 PM</b></div></div></div>
+    <div class="map-card reveal delay"><iframe title="Dada's Sweets location" src="https://www.google.com/maps?q=Dada%27s%20Sweets%20And%20Restaurant%20SM%20College%20Station%20Road%20Chandausi&output=embed" loading="lazy"></iframe></div>
+  </div>
+</section>
+</main>
 
-    <section class="story section-pad" id="story">
-      <div class="section-kicker reveal"><span>02</span><span>THE STORY</span></div>
-      <div class="story-grid">
-        <div class="story-title reveal">
-          <h2>From a sweets counter to a <em>full table.</em></h2>
-          <p>One address for mithai, namkeen, restaurant favourites and practical family meal options.</p>
-        </div>
-        <div class="story-body reveal delay-1">
-          <p>
-            According to Dada's official website, the business was founded by <strong>Dileep Kumar</strong>. It started as a sweets shop and, after its success, expanded into the restaurant line.
-          </p>
-          <p>
-            The current public footprint combines the sweet-shop identity with restaurant, bakery and Bhaji Box listings in Chandausi.
-          </p>
-          <a class="text-button" href="https://www.dadasweets.com/" target="_blank" rel="noreferrer">Read the official story ↗</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="selection section-pad" id="selection">
-      <div class="section-kicker reveal"><span>03</span><span>THE SELECTION</span></div>
-      <div class="section-head reveal">
-        <div>
-          <h2>Known favourites,<br><em>beautifully presented.</em></h2>
-        </div>
-        <p>Items below are taken from the business's official online catalogue and public listings. Prices are not shown where current pricing could not be verified without sign-in.</p>
-      </div>
-
-      <div class="filter-row reveal delay-1" role="tablist" aria-label="Food categories">
-        <button class="filter active" data-filter="all">All</button>
-        <button class="filter" data-filter="sweets">Sweets</button>
-        <button class="filter" data-filter="boxes">Boxes</button>
-        <button class="filter" data-filter="namkeen">Namkeen</button>
-        <button class="filter" data-filter="restaurant">Restaurant</button>
-      </div>
-
-      <div class="cards-grid" id="cardsGrid">
-        <article class="food-card reveal" data-category="sweets">
-          <div class="food-image tall">
-            <img src="https://cdn.dotpe.in/longtail/item_category/8152314/FYGaeC1F.png" alt="Assorted peda sweets and namkeen" loading="lazy">
-          </div>
-          <div class="food-meta"><span>SWEETS</span><b>Mango Peda</b><p>A named product on Dada's official online catalogue.</p></div>
-        </article>
-        <article class="food-card reveal delay-1" data-category="sweets">
-          <div class="food-image">
-            <img src="https://cdn.dotpe.in/longtail/custom_website/8152314/20OLPnNG.png" alt="Dada's assorted Indian sweets" loading="lazy">
-          </div>
-          <div class="food-meta"><span>SWEETS</span><b>Elaichi Mawa Ghevar</b><p>Another named product on the official catalogue.</p></div>
-        </article>
-        <article class="food-card reveal delay-2" data-category="namkeen">
-          <div class="food-image warm">
-            <img src="https://cdn.dotpe.in/longtail/item_category/8152314/FYGaeC1F.png" alt="Dada's assorted namkeen and peda" loading="lazy">
-          </div>
-          <div class="food-meta"><span>NAMKEEN</span><b>Kaju Namkeen</b><p>Appears in Dada's premium assortment listings.</p></div>
-        </article>
-        <article class="food-card reveal" data-category="sweets">
-          <div class="food-image">
-            <img src="https://cdn.dotpe.in/longtail/custom_website/8152314/20OLPnNG.png" alt="Traditional mithai assortment" loading="lazy">
-          </div>
-          <div class="food-meta"><span>SWEETS</span><b>Jalebi</b><p>Available as a named product in the official store.</p></div>
-        </article>
-        <article class="food-card reveal delay-1" data-category="sweets">
-          <div class="food-image">
-            <img src="https://cdn.dotpe.in/longtail/item_category/8152314/FYGaeC1F.png" alt="Indian peda assortment" loading="lazy">
-          </div>
-          <div class="food-meta"><span>SWEETS</span><b>Doda Barfi</b><p>Listed in the official gift-box assortment.</p></div>
-        </article>
-        <article class="food-card reveal delay-2" data-category="sweets">
-          <div class="food-image tall">
-            <img src="https://cdn.dotpe.in/longtail/custom_website/8152314/20OLPnNG.png" alt="Indian sweets display" loading="lazy">
-          </div>
-          <div class="food-meta"><span>SWEETS</span><b>Dry Fruit Laddu</b><p>Named in Dada's premium box catalogue.</p></div>
-        </article>
-        <article class="food-card reveal" data-category="boxes">
-          <div class="food-image box-art"><span>14</span><small>Bhaji Box</small></div>
-          <div class="food-meta"><span>BH​AJI BOX</span><b>14 Bhaji Box</b><p>A named current product listing on Dada's official store.</p></div>
-        </article>
-        <article class="food-card reveal delay-1" data-category="boxes">
-          <div class="food-image box-art box-art-dark"><span>16</span><small>Bhaji Box</small></div>
-          <div class="food-meta"><span>BHAJI BOX</span><b>16 Bhaji Box</b><p>A named current product listing on Dada's official store.</p></div>
-        </article>
-        <article class="food-card reveal delay-2" data-category="boxes">
-          <div class="food-image box-art"><span>22</span><small>Premium Bhaji Box</small></div>
-          <div class="food-meta"><span>BHAJI BOX</span><b>22 Premium Bhaji Box</b><p>Listed on the official online store.</p></div>
-        </article>
-        <article class="food-card reveal" data-category="boxes">
-          <div class="food-image box-art box-art-dark"><span>06</span><small>Premium 4Line Box</small></div>
-          <div class="food-meta"><span>GIFT BOX</span><b>06 Premium 4Line Box</b><p>Current named product from Dada's official catalogue.</p></div>
-        </article>
-        <article class="food-card reveal delay-1" data-category="restaurant">
-          <div class="food-image restaurant-art">
-            <span>VEG</span><small>Restaurant line</small>
-          </div>
-          <div class="food-meta"><span>RESTAURANT</span><b>Family dining</b><p>Public listings describe a pure-vegetarian sweets-and-restaurant destination.</p></div>
-        </article>
-        <article class="food-card reveal delay-2" data-category="restaurant">
-          <div class="food-image delivery-art">
-            <span>FAST</span><small>Delivery</small>
-          </div>
-          <div class="food-meta"><span>SERVICE</span><b>Fast delivery</b><p>The official website highlights fast delivery among its service points.</p></div>
-        </article>
-      </div>
-
-      <div class="selection-footer reveal">
-        <div class="catalog-note"><span class="catalog-dot"></span><span>Want the current live catalogue? Open the official store.</span></div>
-        <a class="secondary-button" href="#ordering">See ordering options ↗</a>
-      </div>
-    </section>
-
-    <section class="trust section-pad">
-      <div class="trust-grid">
-        <div class="trust-intro reveal">
-          <div class="section-kicker"><span>04</span><span>WHY DADA'S</span></div>
-          <h2>Simple promises.<br><em>Clear identity.</em></h2>
-          <p>The business's own website highlights the following attributes — used here as brand facts, not independent certifications by this website.</p>
-        </div>
-        <div class="trust-list">
-          <div class="trust-item reveal"><span>01</span><div><b>Premium Quality</b><p>Presented by the business as one of its core reasons to choose Dada's.</p></div></div>
-          <div class="trust-item reveal delay-1"><span>02</span><div><b>Freshly Prepared</b><p>Fresh preparation is explicitly highlighted on the official site.</p></div></div>
-          <div class="trust-item reveal delay-2"><span>03</span><div><b>Pure Vegetarian</b><p>Official website and public listings describe the offering as vegetarian.</p></div></div>
-          <div class="trust-item reveal"><span>04</span><div><b>FSSAI Compliant</b><p>Listed by Dada's official website as a business attribute.</p></div></div>
-          <div class="trust-item reveal delay-1"><span>05</span><div><b>Value for Money</b><p>Listed by Dada's official website as a business attribute.</p></div></div>
-          <div class="trust-item reveal delay-2"><span>06</span><div><b>ISO Certified</b><p>Listed by Dada's official website as a business attribute; verify certificate details directly with the business.</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ordering section-pad" id="ordering">
-      <div class="ordering-grid">
-        <div class="ordering-copy reveal">
-          <div class="section-kicker"><span>05</span><span>ORDER & CONNECT</span></div>
-          <h2>Make it a celebration.<br><em>Make it Dada's.</em></h2>
-          <p>For the current live catalogue, availability and delivery coverage, use the business contact below. This site only shows ordering channels that could be verified publicly.</p>
-          <div class="order-actions">
-            <a class="primary-button" href="tel:+919045888809">Call to order <span>↗</span></a>
-            <a class="secondary-button" href="mailto:maildada061973@gmail.com">Email Dada's ↗</a>
-          </div>
-          <div class="order-status"><span></span><b>Direct contact</b><small>Live Zomato/Swiggy listing was not reliably verified in the public search, so no unverified marketplace button is shown.</small></div>
-        </div>
-        <div class="order-card reveal delay-1">
-          <span class="order-card-label">AT A GLANCE</span>
-          <div class="order-stat"><b>100%</b><span>Vegetarian positioning</span></div>
-          <div class="order-stat"><b>06+</b><span>Named catalogue / box favourites shown here</span></div>
-          <div class="order-stat"><b>01</b><span>Chandausi destination</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="restaurant section-pad" id="restaurant">
-      <div class="restaurant-grid">
-        <div class="restaurant-visual reveal">
-          <div class="visual-card visual-card-main">
-            <span class="visual-number">DS</span>
-            <div><small>Sweet shop</small><strong>+</strong><small>restaurant line</small></div>
-          </div>
-          <div class="visual-card visual-card-note">
-            <span>VEG</span>
-            <p>Family-friendly dining<br>with sweets to finish.</p>
-          </div>
-        </div>
-        <div class="restaurant-copy reveal delay-1">
-          <div class="section-kicker"><span>06</span><span>THE RESTAURANT</span></div>
-          <h2>Come for the mithai.<br><em>Stay for the meal.</em></h2>
-          <p>
-            Public listings describe Dada's as a sweet shop, family restaurant and bakery, with vegetarian food, delivery and take-away. The official website connects the original sweets business with an expanded restaurant line.
-          </p>
-          <div class="restaurant-points">
-            <span>Sweet shop</span><span>Family restaurant</span><span>Bakery shop</span><span>Bhaji Boxes</span>
-          </div>
-          <div class="restaurant-actions">
-            <a class="primary-button" href="tel:+919045888809">Call the restaurant <span>↗</span></a>
-            <a class="secondary-button" href="https://www.google.com/maps/search/?api=1&query=Dada%27s%20Sweets%20And%20Restaurant%20SM%20College%20Station%20Road%20Chandausi" target="_blank" rel="noreferrer">Open directions ↗</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="visit section-pad" id="visit">
-      <div class="visit-grid">
-        <div class="visit-copy reveal">
-          <div class="section-kicker"><span>07</span><span>VISIT DADA'S</span></div>
-          <h2>Station Road,<br><em>Chandausi.</em></h2>
-          <p>Publicly listed at Station Road near S.M. College, Chandausi, Uttar Pradesh 244412.</p>
-          <div class="contact-stack">
-            <a href="tel:+919045888809"><span>Phone</span><b>90458 88809</b></a>
-            <a href="mailto:maildada061973@gmail.com"><span>Email</span><b>maildada061973@gmail.com</b></a>
-            <a href="#ordering"><span>Ordering</span><b>Call / Email ↗</b></a>
-          </div>
-          <div class="visit-buttons">
-            <a class="primary-button" href="https://www.google.com/maps/search/?api=1&query=Dada%27s%20Sweets%20And%20Restaurant%20SM%20College%20Station%20Road%20Chandausi" target="_blank" rel="noreferrer">Get directions <span>↗</span></a>
-            <a class="secondary-button" href="#ordering">Order / enquire ↗</a>
-          </div>
-        </div>
-
-        <div class="visit-card reveal delay-1">
-          <div class="visit-card-head"><span>LOCATION</span><span class="live-dot"></span></div>
-          <div class="map-window">
-            <iframe title="Dada's Sweets & Restaurant location map" src="https://www.google.com/maps?q=Dada%27s%20Sweets%20And%20Restaurant%20SM%20College%20Station%20Road%20Chandausi&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <div class="hours-note">
-            <span>Public listing hours</span>
-            <b>08:30 AM – 10:30 PM</b>
-            <small>Hours shown by a public directory; confirm before visiting because listings can change.</small>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sources section-pad">
-      <div class="sources-inner">
-        <div class="section-kicker"><span>08</span><span>PUBLIC DETAILS</span></div>
-        <h2>Built from the business's public footprint.</h2>
-        <p>Business facts on this page were checked against Dada's official website and public business listings during September 2026. External ratings and directory data can change over time.</p>
-        <div class="source-links">
-          <a href="#ordering">Order / enquire ↗</a>
-          <a href="https://www.justdial.com/Sambhal/Dada-Sweets-and-Restaurant-Chandausi/9999PX591-X591-171201180245-N3F5_BZDET/photos" target="_blank" rel="noreferrer">Public photo listing ↗</a>
-          <a href="https://www.google.com/maps/search/?api=1&query=Dada%27s%20Sweets%20And%20Restaurant%20SM%20College%20Station%20Road%20Chandausi" target="_blank" rel="noreferrer">Google Maps ↗</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-main">
-      <a class="brand footer-brand" href="#home">
-        <span class="brand-mark">D</span>
-        <span class="brand-copy"><strong>Dada's</strong><small>Sweets & Restaurant</small></span>
-      </a>
-      <p>Station Road · Near S.M. College · Chandausi, Uttar Pradesh 244412</p>
-      <a href="tel:+919045888809">90458 88809</a>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> Dada's Sweets & Restaurant</span>
-      <span>Designed with a food-first editorial direction inspired by the visual approach of Raj Delight; Raj Delight itself is unchanged.</span>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<footer class="footer">
+  <div><a class="brand" href="#home"><span class="brand-logo"><img src="https://cdn.dotpe.in/longtail/custom_website/8152314/20OLPnNG.png" alt="Dada's original logo"></span><span><strong>Dada's</strong><small>Sweets & Restaurant</small></span></a><p>Station Road · Chandausi · Pure Vegetarian</p></div>
+  <div class="footer-bottom"><span>© <span id="year"></span> Dada's Sweets & Restaurant</span><span>Premium website concept for the business.</span></div>
+</footer>
+<script src="script.js"></script>
+</body></html>
