@@ -263,3 +263,43 @@ body[data-theme="noir"] .mobile-drawer{background:#17120f;color:#f5eadf}
  .order-actions{flex-direction:column}.order-actions a{width:100%}
  .order-stat b{font-size:42px}
 }
+
+/* Dada's premium v3 overrides */
+:root{
+  --paper:#f5efe5;--paper2:#e8ddcf;--ink:#18130f;--muted:#766a60;
+  --line:rgba(24,19,15,.14);--accent:#8f301d;--gold:#bd905e;--cream:#fffaf2;
+}
+body.noir{--paper:#17110e;--paper2:#211914;--ink:#f6ece1;--muted:#b7a99b;--line:rgba(255,240,224,.15);--cream:#fff8ee}
+.hero{padding-top:74px}
+.hero-main-photo,.hero-side-photo{box-shadow:0 30px 80px rgba(55,34,20,.16)}
+.hero-main-photo{border-radius:175px 175px 6px 6px}
+.hero-side-photo{border-color:var(--paper);border-width:7px}
+.menu-card{background:rgba(255,250,244,.92);border-color:rgba(24,19,15,.08)}
+body.noir .menu-card{background:#201813}
+.meta{padding:21px 22px 24px}
+.meta h3{font-size:29px}
+.photo img,.box-photo img{object-position:center}
+.photo-card:nth-child(1) .photo img{object-position:50% 56%}
+.photo-card:nth-child(2) .photo img{object-position:50% 44%}
+.photo-card:nth-child(3) .photo img{object-position:50% 44%}
+.photo-card:nth-child(4) .photo img{object-position:50% 50%}
+.menu-card:nth-child(4n+1){grid-column:span 6}
+.text-card .text-art{background:#211712}
+.gallery-grid figure{box-shadow:0 20px 55px rgba(55,34,20,.10)}
+.order{position:relative;overflow:hidden}
+.order:before{content:"D";position:absolute;right:7vw;top:-80px;font:600 340px/1 "Playfair Display",serif;color:rgba(255,255,255,.025)}
+.order-panel{position:relative;z-index:1}
+.underlined:hover{color:var(--accent)}
+.filter-bar button.active{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+@media(max-width:1000px){
+  .hero{padding-top:50px}
+  .hero-media{min-height:540px}
+}
+@media(max-width:680px){
+  .hero{padding-top:40px}
+  .hero h1{font-size:58px}
+  .hero-media{min-height:425px}
+  .hero-main-photo{border-radius:85px 85px 4px 4px}
+  .hero-side-photo{border-width:5px}
+  .meta h3{font-size:25px}
+}
